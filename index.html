@@ -10,6 +10,7 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f9f9f9;
       color: #2e2e2e;
+      scroll-behavior: smooth;
     }
     header {
       background: #e0f0ec;
@@ -37,13 +38,19 @@
     }
     .section {
       max-width: 900px;
-      margin: 40px auto;
+      margin: 60px auto;
       padding: 0 20px;
     }
     .section h2 {
       color: #3b7c86;
       border-bottom: 1px solid #ccc;
       padding-bottom: 5px;
+    }
+    .about-photo {
+      float: right;
+      margin-left: 20px;
+      width: 180px;
+      border-radius: 10px;
     }
     .projects {
       display: grid;
@@ -80,18 +87,20 @@
       background: #fdd835;
       color: #4d4d00;
     }
-    .resume-button {
-      display: inline-block;
+    .skills-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 10px;
       margin-top: 20px;
-      padding: 10px 18px;
-      background-color: #3b7c86;
-      color: white;
-      border-radius: 4px;
-      text-decoration: none;
-      font-size: 1em;
     }
-    .resume-button:hover {
-      background-color: #2d5d65;
+    .skill {
+      background: #eaf6f3;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 0.95em;
+      color: #2e5e60;
+      font-weight: 500;
     }
   </style>
 </head>
@@ -100,21 +109,46 @@
     <h1>Dana Nuñez</h1>
     <p>Data Analyst | Background in Engineering, Procurement & Operations</p>
     <div class="links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="Dana_Nunez_Resume.pdf" target="_blank">Resume</a>
       <a href="mailto:danaliz98@gmail.com">Email</a>
       <a href="https://www.linkedin.com/in/dananunez98">LinkedIn</a>
       <a href="https://github.com/DanaNu1108">GitHub</a>
-      <a href="Dana_Nunez_Resume.pdf" target="_blank">Resume</a>
     </div>
   </header>
 
-  <section class="section">
+  <section id="about" class="section">
     <h2>About Me</h2>
+    <img src="your-photo.jpg" alt="Dana Nuñez" class="about-photo" />
     <p>
-      I’m a data analyst in training with a background in industrial engineering, procurement, and process optimization. I enjoy working on real-world projects that mix technical tools with strategic thinking. I’m currently completing a Data Science diploma in Vancouver while building a diverse project portfolio using Python, SQL, Tableau, and machine learning.
+      I’m a data analyst with a background in industrial engineering, procurement, and process optimization. Currently based in Vancouver, I’m pursuing a Data Science diploma while building hands-on projects that combine technical skills with business insight.
+    </p>
+    <p>
+      My work bridges the gap between engineering logic and data storytelling. I enjoy solving problems, improving workflows, and applying Python, SQL, Tableau, and automation tools to real-world challenges.
     </p>
   </section>
 
-  <section class="section">
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="skill">Python</div>
+      <div class="skill">SQL</div>
+      <div class="skill">Pandas</div>
+      <div class="skill">NumPy</div>
+      <div class="skill">Scikit-learn</div>
+      <div class="skill">XGBoost</div>
+      <div class="skill">Tableau</div>
+      <div class="skill">Excel</div>
+      <div class="skill">Google Sheets</div>
+      <div class="skill">Apps Script</div>
+      <div class="skill">Jupyter Notebook</div>
+      <div class="skill">Project Coordination</div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
     <h2>Projects</h2>
     <div class="projects">
       <div class="project-card">
