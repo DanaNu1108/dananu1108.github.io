@@ -6,119 +6,139 @@
   <title>Dana Nuñez | Data Analyst</title>
   <style>
     body {
+      margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 24px;
-      line-height: 1.7;
-      color: #222;
-      background-color: #fdfdfd;
+      background-color: #f9f9f9;
+      color: #2e2e2e;
     }
-    h1 {
-      font-size: 2.5em;
+    header {
+      background: #e0f0ec;
+      padding: 60px 20px 40px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3em;
       color: #2c5e63;
-      margin-bottom: 0.2em;
     }
-    h2 {
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 5px;
-      margin-top: 2em;
+    header p {
+      margin: 8px 0;
+      font-size: 1.1em;
+      color: #476e74;
+    }
+    .links a {
+      margin: 0 10px;
       color: #3b7c86;
-    }
-    a {
-      color: #468189;
       text-decoration: none;
+      font-weight: 500;
     }
-    a:hover {
+    .links a:hover {
       text-decoration: underline;
     }
-    .contact {
-      margin-top: 1em;
-      font-size: 0.95em;
+    .section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .section h2 {
+      color: #3b7c86;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
     }
     .projects {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
-      margin-top: 1em;
+      margin-top: 20px;
     }
     .project-card {
-      border: 1px solid #ddd;
-      border-left: 5px solid #3b7c86;
+      border-left: 4px solid #3b7c86;
+      background: white;
       padding: 16px;
       border-radius: 6px;
-      background-color: #fcfcfc;
-      transition: box-shadow 0.3s;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
-    .project-card:hover {
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-    .project-title {
-      font-weight: bold;
+    .project-card h3 {
+      margin: 0 0 6px;
       font-size: 1.1em;
-      margin-bottom: 4px;
     }
-    .icon {
-      font-style: normal;
-      color: #468189;
-      margin-right: 6px;
+    .project-card p {
+      margin: 0;
+      font-size: 0.95em;
+      color: #555;
+    }
+    .status {
+      font-size: 0.8em;
+      background: #dedede;
+      display: inline-block;
+      margin-top: 4px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #333;
+    }
+    .status.in-progress {
+      background: #fdd835;
+      color: #4d4d00;
     }
     .resume-button {
       display: inline-block;
-      margin-top: 10px;
-      padding: 8px 16px;
+      margin-top: 20px;
+      padding: 10px 18px;
       background-color: #3b7c86;
       color: white;
       border-radius: 4px;
       text-decoration: none;
-      font-size: 0.95em;
+      font-size: 1em;
     }
     .resume-button:hover {
-      background-color: #326b74;
+      background-color: #2d5d65;
     }
   </style>
 </head>
 <body>
-  <h1>Dana Nuñez</h1>
-  <p><strong>Data Analyst</strong> | Engineering, Procurement & Operations Background</p>
-  <p class="contact">
-    Vancouver, BC · <a href="mailto:danaliz98@gmail.com">danaliz98@gmail.com</a><br />
-    <a href="https://www.linkedin.com/in/dananunez98">LinkedIn</a> ·
-    <a href="https://github.com/DanaNu1108">GitHub</a>
-  </p>
-
-  <a class="resume-button" href="Dana_Nunez_Resume.pdf" target="_blank">📄 View My Resume</a>
-
-  <h2>About Me</h2>
-  <p>
-    I'm a data analyst in training with a background in industrial engineering, procurement, and process optimization.
-    I'm currently studying Data Science in Vancouver and building hands-on projects using Python, SQL, Tableau, and machine learning.
-    I enjoy transforming complex data into actionable insights and optimizing processes through automation.
-  </p>
-
-  <h2>Projects</h2>
-  <div class="projects">
-    <div class="project-card">
-      <div class="project-title">📊 <a href="https://github.com/DanaNu1108/podcast-listening-prediction">Podcast Listening Prediction</a></div>
-      <p>Regression modeling to estimate podcast listening time using audio metadata.</p>
+  <header>
+    <h1>Dana Nuñez</h1>
+    <p>Data Analyst | Background in Engineering, Procurement & Operations</p>
+    <div class="links">
+      <a href="mailto:danaliz98@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/dananunez98">LinkedIn</a>
+      <a href="https://github.com/DanaNu1108">GitHub</a>
+      <a href="Dana_Nunez_Resume.pdf" target="_blank">Resume</a>
     </div>
-    <div class="project-card">
-      <div class="project-title">🏡 <a href="https://github.com/DanaNu1108/housing-prices-regression">Housing Prices</a></div>
-      <p>Regression with feature engineering and ensemble models to predict house sale prices.</p>
-    </div>
-    <div class="project-card">
-      <div class="project-title">🚢 <a href="https://github.com/DanaNu1108/titanic-survival-analysis">Titanic Classification</a></div>
-      <p>Binary classification model for survival prediction based on passenger features.</p>
-    </div>
-    <div class="project-card">
-      <div class="project-title">💳 <a href="https://github.com/DanaNu1108/default-credit-score">Credit Default Risk</a></div>
-      <p>Machine learning model replicating academic research to predict credit default.</p>
-    </div>
-  </div>
+  </header>
 
-  <h2>Contact</h2>
-  <p>
-    Feel free to reach out via <a href="mailto:danaliz98@gmail.com">email</a> or connect on <a href="https://www.linkedin.com/in/dananunez98">LinkedIn</a>.
-  </p>
+  <section class="section">
+    <h2>About Me</h2>
+    <p>
+      I’m a data analyst in training with a background in industrial engineering, procurement, and process optimization. I enjoy working on real-world projects that mix technical tools with strategic thinking. I’m currently completing a Data Science diploma in Vancouver while building a diverse project portfolio using Python, SQL, Tableau, and machine learning.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3><a href="https://github.com/DanaNu1108/podcast-listening-prediction">Podcast Listening Prediction</a></h3>
+        <p>Regression modeling to estimate listening time using podcast metadata.</p>
+      </div>
+      <div class="project-card">
+        <h3><a href="https://github.com/DanaNu1108/housing-prices-regression">Housing Prices</a></h3>
+        <p>Predictive modeling using ensemble regressors with feature engineering.</p>
+      </div>
+      <div class="project-card">
+        <h3><a href="https://github.com/DanaNu1108/titanic-survival-analysis">Titanic Classification</a></h3>
+        <p>Binary classification to predict passenger survival using scikit-learn.</p>
+      </div>
+      <div class="project-card">
+        <h3><a href="https://github.com/DanaNu1108/default-credit-score">Credit Default Risk</a></h3>
+        <p>Credit risk classification using XGBoost and replication of academic research.</p>
+      </div>
+      <div class="project-card">
+        <h3><a href="#">Retail Insights (Coming Soon)</a></h3>
+        <p>Customer segmentation and behavioral analytics in retail data.</p>
+        <span class="status in-progress">In Progress</span>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
